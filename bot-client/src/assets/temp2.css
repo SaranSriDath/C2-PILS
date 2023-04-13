@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;900&family=Tilt+Neon&display=swap");
+
+.minmax {
+  position: fixed;
+  margin: 5px;
+  right: 20px;
+}
+
+.mainbody {
+  display: flex;
+  justify-content: center;
+  font-family: "Golos Text";
+  background-color: black;
+}
+
+.logo {
+  padding: 5px;
+  height: 75px;
+  width: 75px;
+  position: relative;
+  left: 10%;
+}
+
+.logoheader {
+  display: flex;
+  align-items: center;
+}
+
+.logohead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  position: relative;
+  left: 20%;
+  font-weight: 600;
+  font-size: larger;
+}
+
+.chatform {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  /* -webkit-appearance: none; */
+  border-radius: 5px;
+  background: whitesmoke;
+  margin: 5px;
+  color: #444;
+}
+
+.chatwindow {
+  display: flex;
+  flex-direction: column;
+}
+
+.messagelist {
+  background: #f8f8f8;
+  height: 70%;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  position: absolute;
+  width: 93%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -ms-flex-direction: column;
+  scroll-behavior: smooth;
+  flex-direction: column;
+  z-index: 15;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.entiremessages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.messagebox {
+  position: relative;
+  width: 90%;
+}
+
+.minimized {
+  display: none;
+}
+
+.notminimized {
+  height: 90%;
+  padding: 5px;
+  width: 400px;
+  position: absolute;
+  margin: 0 auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  scroll-behavior: smooth;
+  flex-direction: column;
+  z-index: 15;
+
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scrollbar-width: none;
+  right: 0;
+  bottom: 0;
+  margin: 15px;
+  background: burlywood;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.chatbox {
+  display: flex;
+
+  align-items: center;
+}
+
+.chatbox.botschat {
+  justify-content: flex-start;
+}
+
+.chatbox.userschat {
+  justify-content: flex-end;
+}
+
+.chatmsg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.chatmsg.botschat {
+  border-radius: 0px 10px 10px 10px;
+  background-color: red;
+}
+
+.chatmsg.userschat {
+  border-radius: 10px 10px 0px 10px;
+  background-color: aqua;
+}
+
+.chattime {
+  display: flex;
+
+  align-items: center;
+  font-size: x-small;
+  color: grey;
+}
+
+.chattime.userschat {
+  justify-content: right;
+}
+
+.sendbutton {
+  margin: 5px;
+}
+
+.divider {
+  justify-content: center;
+  width: 98%;
+  height: 2px;
+  background-color: black;
+  margin: 5px;
+}
